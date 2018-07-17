@@ -165,7 +165,7 @@ The features (output from `capture_features.py`) were then used to train a Suppo
 |                         **Scene 1**                          |
 | Results: 3<img src="/tex/87f05cbf93b3fa867c09609490a35c99.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999991pt height=24.65753399999998pt/>3 Objects Detected |
 
-| ![](.\imgs\World-2-Results.png) |
+| ![](./imgs/World-2-Results.png) |
 | :-----------------------------: |
 |           **Scene 2**           |
 | Results: 5<img src="/tex/87f05cbf93b3fa867c09609490a35c99.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999991pt height=24.65753399999998pt/>5 Objects Detected |
