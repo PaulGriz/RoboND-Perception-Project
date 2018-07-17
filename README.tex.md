@@ -25,9 +25,9 @@ RGB-D cameras provide detailed features and dense point clouds resulting in pote
 The figure above displays a 2D & 3D perspective of an example environment.
 
 -   In 2D perspectives, the term "pixel" short for "picture element," and $\text{total number of pixels} = \text{H} \times \text{W} [\text{of the resolution}] $, where $\text{H}$ as the height & $\text{W}$ as the width.
--   In 3D perspectives, the term "voxel" is short for "volume element," and $\text{total number of voxels} = \frac{\text{H} \times \text{W} \times \text{D}}{\text{LEAF_SIZE}}$, where $\text{D}$ is the depth & $\text{LEAF_SIZE}$ is the size of a single voxel.
+-   In 3D perspectives, the term "voxel" is short for "volume element," and $\text{total number of voxels} = \frac{\text{H} \times \text{W} \times \text{D}}{\text{LEAF SIZE}}$, where $\text{D}$ is the depth & $\text{LEAF SIZE}$ is the size of a single voxel.
 
-A voxel grid filter downsamples the data by increasing the $\text{LEAF_SIZE}$
+A voxel grid filter downsamples the data by increasing the $\text{LEAF SIZE}$:
 
 ```python
 vox = outlier_filtered.make_voxel_grid_filter()
