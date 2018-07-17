@@ -14,7 +14,7 @@
 
 >   [Link to repo containing the exercises](https://github.com/udacity/RoboND-Perception-Exercises)
 
-#### VoxelGrid Downsampling Filter
+### VoxelGrid Downsampling Filter
 
 RGB-D cameras provide detailed features and dense point clouds resulting in potentially a multitude of points in per unit volume. Using [Big-O Notation](https://en.wikipedia.org/wiki/Big_O_notation), Computing point cloud data is on a $O(N)$ for $N = \text{Number of Points}$. So, the time required for processing a point cloud is linear to number of points (resolution). However, increasing the resolution is processing time may not yield any improvements. An optimal situation for this problem is finding the lowest $N$ for a given accuracy. To accomplish this, I "down-sampled" the data by applying a VoxelGrid Downsampling Filter to derive a point cloud with the lowest $N$ while maintaining the accuracy required in representing the input point cloud.
 
@@ -36,7 +36,7 @@ vox.set_leaf_size(LEAF_SIZE, LEAF_SIZE, LEAF_SIZE)
 vox_filtered = vox.filter()
 ```
 
-#### Passthrough Filter
+### Passthrough Filter
 
 >   [Link to Official Passthrough Filter Example](https://github.com/strawlab/python-pcl/blob/3e04e89169bbe15904a03aae6c76b1f4dc20cca5/examples/official/Filtering/PassThroughFilter.py) from python-pcl
 
@@ -77,7 +77,7 @@ filtered_passthrough_z = passthrough_z.filter()
 | :--------------------------------: |
 |    *Passthrough Filter Results*    |
 
-#### RANSAC Plane Segmentation
+### RANSAC Plane Segmentation
 
 Simple to how [Regression Analysis](https://en.wikipedia.org/wiki/Regression_analysis) finds the relationships among variables, [Random Sample Consensus (RANSAC)](https://en.wikipedia.org/wiki/Random_sample_consensus) will return a model containing inliers and outliers.
 
@@ -107,7 +107,7 @@ The extracted inliers includes the table. It looks like this:
 | :--------------------: |
 |    *RANSAC Results*    |
 
-#### Euclidean Clustering
+### Euclidean Clustering
 
 With the table's point cloud now separated from the objects, the objects need to be individually separated. To separate each object, the **Density-based spatial clustering of applications with noise** [(DBSCAN)](https://en.wikipedia.org/wiki/DBSCAN) clustering algorithm was used.
 
@@ -133,7 +133,7 @@ cluster_indices = clusters.Extract()
 | :-------------------------------------: |
 | *DBSCAN / Euclidean Clustering Results* |
 
-#### Object Recognition
+### Object Recognition
 
 TODO FILE SPELL CHECK: To accomplish object recognition, I edited the `./training/capture_features.py` to capture features of each object from `160` random positions each.
 
@@ -145,7 +145,7 @@ The features (output from `capture_features.py`) were then used to train a Suppo
 
 ---
 
-### Running the Simulation
+## Running the Simulation
 
 1.  Open two terminals.
 2.  In both terminals: `cd ~/catkin_ws/src/RoboND-Perception-Project/pr2_robot `
@@ -158,7 +158,7 @@ The features (output from `capture_features.py`) were then used to train a Suppo
 
 ---
 
-### Results
+## Results
 
 | ![](.\imgs\World-1-Results.png) |
 | :-----------------------------: |
@@ -179,7 +179,7 @@ The features (output from `capture_features.py`) were then used to train a Suppo
 
 ---
 
-### Possible improvements:
+## Possible improvements:
 
 1.  Complete the collision mapping challenge by using the `pick_place_server` to execute the pick and place operation.
 2.  Further Improve the SVM's training accuracy.
