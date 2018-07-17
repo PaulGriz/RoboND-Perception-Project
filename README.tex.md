@@ -73,7 +73,7 @@ passthrough_z.set_filter_limits(z_axis_min, z_axis_max)
 filtered_passthrough_z = passthrough_z.filter()
 ```
 
-| ![](.\imgs\PassThrough-Filter.png) |
+| ![](./imgs/PassThrough-Filter.png) |
 | :--------------------------------: |
 |    *Passthrough Filter Results*    |
 
@@ -103,7 +103,7 @@ cloud_objects = cloud_filtered.extract(inliers, negative=True)
 
 The extracted inliers includes the table. It looks like this:
 
-| ![](.\imgs\RANSAC.png) |
+| ![](./imgs/RANSAC.png) |
 | :--------------------: |
 |    *RANSAC Results*    |
 
