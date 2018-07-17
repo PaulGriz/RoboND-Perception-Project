@@ -129,7 +129,7 @@ clusters.set_SearchMethod(tree)
 cluster_indices = clusters.Extract()
 ```
 
-|         ![](.\imgs\DBSCAN.png)          |
+|         ![](./imgs/DBSCAN.png)          |
 | :-------------------------------------: |
 | *DBSCAN / Euclidean Clustering Results* |
 
@@ -139,7 +139,7 @@ TODO FILE SPELL CHECK: To accomplish object recognition, I edited the `./trainin
 
 The features (output from `capture_features.py`) were then used to train a Support Vector Machine [(SVM)](https://en.wikipedia.org/wiki/Support_vector_machine) to characterize the parameter space of the features into named objects. The SVM uses the [`svm.LinearSVC`](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC) Class from the [scikit-learn](http://scikit-learn.org/stable/index.html) Python library.
 
-| ![](.\imgs\Training-Results.png) |
+| ![](./imgs/Training-Results.png) |
 | :------------------------------: |
 |        *Training Results*        |
 
@@ -160,9 +160,9 @@ The features (output from `capture_features.py`) were then used to train a Suppo
 
 ## Results
 
-| ![](.\imgs\World-1-Results.png) |
-| :-----------------------------: |
-|           **Scene 1**           |
+|               ![](./imgs/World-1-Results.png)                |
+| :----------------------------------------------------------: |
+|                         **Scene 1**                          |
 | Results: 3<img src="/tex/87f05cbf93b3fa867c09609490a35c99.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999991pt height=24.65753399999998pt/>3 Objects Detected |
 
 | ![](.\imgs\World-2-Results.png) |
