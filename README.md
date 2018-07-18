@@ -1,6 +1,6 @@
 >   ## Project: 3D Perception
 >
->   >   **Date:** July 15, 2018
+>   >   **Date:** July 18, 2018
 >   >
 >   >   **By:** Paul Griz
 >   >
